@@ -1,0 +1,126 @@
+.dashboard-section {
+    padding: 2rem 0;
+}
+
+.search-filters {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.search-filters form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-filters input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-filters button {
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.flight-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+}
+
+.flight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.flight-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.flight-details {
+    margin: 1rem 0;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.label {
+    color: #666;
+}
+
+.value {
+    font-weight: 500;
+}
+
+.flight-description {
+    color: #666;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.flight-actions {
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .search-filters form {
+        flex-direction: column;
+    }
+    
+    .search-filters input,
+    .search-filters button {
+        width: 100%;
+    }
+    
+    .flights-grid {
+        grid-template-columns: 1fr;
+    }
+} 
